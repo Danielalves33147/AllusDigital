@@ -2,14 +2,12 @@ function delaySubmit() {
     setTimeout(function() {
       document.getElementById('myForm').submit();
       window.location.href = 'http://127.0.0.1:5501/index.html';
-    }, 4000); // Delay de 3 segundos
+    }, 4000); // Delay de 4 segundos para recarregar a pagina
     
   }
 
 function verificatabela(){
 
-
-    
 var name = document.getElementById("name").value;
 var email = document.getElementById("email").value;
 var message = document.getElementById("message").value;
