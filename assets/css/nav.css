@@ -1,0 +1,105 @@
+#btn-menu, #btn-c {
+    display: none;
+}
+
+#hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    height: 3px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    border-radius: 2px 0px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 0px 32px;
+    }
+
+    .button-menu:hover {
+        box-shadow: none;
+    }
+
+    #btn-menu, #btn-c {
+        display: block;
+    }
+
+    #btn-menu {
+        padding: 5px 0px 5px 8px;
+        background-color: var(--cor002);
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        background-color: rgba(46, 46, 46, 0.65);
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        transition: .5s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #menu button {
+        width: 100%;
+        padding: 32px;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    #menu button:hover {
+        background-color: var(--cor002-1);
+    }
+
+    #nav.active #menu {
+        height: calc(100% - 80px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #hamburguer {
+        display: block;
+        border-top: 3px solid white;
+        width: 26px;
+        background-color: var(--cor002);
+        transform: translateX(0px);
+        border-radius: 2px 0px;
+    }
+
+    #hamburguer::after {
+        width: 16px;
+        transform: translateX(10px);
+    }
+
+    #hamburguer::before {
+        transform: translateX(-8px);
+        width: 34px;
+    }
+
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburguer::before {
+        width: 26px;
+        transform: rotate(135deg);
+        border-radius: 0px;
+    }
+
+    #nav.active #hamburguer::after {
+        width: 26px;
+        transform: translateY(-8px) rotate(-135deg);
+        border-radius: 0px;
+    }
+
+    body.menu-aberto {
+        overflow: hidden;
+    }
+}

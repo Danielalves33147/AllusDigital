@@ -1,0 +1,86 @@
+ #up-box {
+    position: fixed;
+    bottom: 120px;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+#up-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--cor002);
+    height: 64px;
+    width: 64px;
+    transition: .3s ease;
+}
+
+#up-button img {
+    height: 100%;
+}
+
+#up-text {
+    visibility: hidden;
+    width: 0px;
+    opacity: 0;
+    font-size: 48px;
+    font-family: var(--font001);
+    font-weight: 700;
+    text-wrap: nowrap;
+    overflow-x: hidden;
+    transition: visibility .5s ease-in-out, opacity .2s ease-in-out;
+    cursor: pointer;
+}
+
+#up-text.open {
+    visibility: visible;
+    width: 100%;
+    opacity: 1;
+}
+
+#up-button.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+    #up-box {
+        bottom: 70px;
+        gap: 10px;
+    }
+    
+    #up-button {
+        height: 57px;
+        width: 57px;
+    }
+
+    #up-text {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #up-box {
+        bottom: 55px;
+        right: 20px;
+        gap: 24px;
+    }
+    
+    #up-button {
+        height: 32px;
+        width: 32px;
+    }
+
+    #up-text {
+        font-size: 24px;
+    }
+
+    #up-box.center {
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
