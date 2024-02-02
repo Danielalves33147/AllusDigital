@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allus</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+    <link rel="stylesheet" href="assets/css/return.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="archivo">
+        <div id="header-box">
+            <img src="assets/img/Logo-Allus-3-(sem-fundo) 3.svg" alt="Logo-allus">
+            <nav id="nav">
+                <button id="btn-menu">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu">
+                    <li><button id="btn-qs" class="button-menu">Quem somos</button></li>
+                    <li><button id="btn-nr" class="button-menu">Nossas redes</button></li>
+                    <li><button id="btn-s" class="button-menu">Serviços</button></li>
+                    <li><button id="btn-c">Contato</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="quem-somos" class="inter">
+            <div id="img-box">
+                <video width="100%" height="100%" preload="auto" autoplay loop poster="assets/img/artwork1-desfocado.jpg" id="video-box">
+                    <source src="assets/vid/background.mp4" type="video/mp4">
+                </video>
+                <div id="img-box-content">
+                    <img src="assets/img/Logo-Allus-branca-(sem-fundo).svg" alt="Logo-allus">
+                    <p>Te impulsionando para bater suas metas</p>
+                    <p>O seu próximo passo para o sucesso digital está aqui</p>
+                    <button id="btn-nc">Venha nos conhecer</button>
+                </div>
+            </div>
+            <div id="card-box" class="inter">
+                <div id="card-1" class="card" >
+                    <div class="h-card">
+                        <img src="assets/img/Sun.svg" alt="Sun">
+                        <p>Quem somos?</p>
+                    </div>
+                    <p>Somos uma agência digital, buscamos fazer de nossos clientes os maiores na internet. Atualmente somos divididos em duas equipes, uma voltada para design gráfico e outra para desenvolvimento de sistemas.</p>
+                </div>
+                <div id="card-2" class="card">
+                    <div class="h-card c-card">
+                        <img src="assets/img/Moon.svg" alt="Moon">
+                        <p>Mas por que fazer um negócio conosco?</p>
+                    </div>
+                    <p class="c-card">Somos os melhores da região. Nossas equipes são as mais capacitadas do mercado, com experiência comprovada!</p>
+                    <p class="c-card">Valorizamos a criatividade, entregamos as soluções precisas de acordo com o prometido.</p>
+                    <p class="c-card">Damos atenção a todos os detalhes, te colocando sempre em primeiro lugar!</p>
+                </div>
+            </div>
+            <h2>Tudo em todos os lugares</h2>
+            <h3>Você pode nos achar nas principais redes sociais</h3>
+            <div id="social-main" class="social">
+                <a href="https://www.instagram.com/allus.digital/" target="_blank"><img src="assets/img/instagram.svg" alt="Logo-Instagram"></a>
+                <a href="#"><img src="assets/img/behance.svg" target="_blank" alt="Logo-Behance"></a>
+                <a href="https://wa.me/message/FLT4F5WNNWWSI1" target="_blank"><img src="assets/img/whatsapp.svg" target="_blank" alt="Logo-Whatsapp"></a>
+            </div>
+        </div>
+        <section id="contact" class="archivo">
+            <picture>
+                <source media="(max-width: 568px)" srcset="assets/img/Logo-Allus-alternativa-branca-(sem-fundo).svg">
+                <img src="assets/img/Logo-Allus-branca-(sem-fundo).svg" alt="Logo-allus">
+            </picture>
+            <p>Desde 2023</p>
+            <div id="social-contact" class="social">
+                <a href="https://www.instagram.com/allus.digital/" target="_blank"><img src="assets/img/instagram.svg" alt="Logo-Instagram"></a>
+                <a href="#"><img src="assets/img/behance.svg" target="_blank" alt="Logo-Behance"></a>
+                <a href="https://wa.me/message/FLT4F5WNNWWSI1" target="_blank"><img src="assets/img/whatsapp.svg" target="_blank" alt="Logo-Whatsapp"></a>
+            </div>
+            <form id="myForm" action="https://api.staticforms.xyz/submit" onsubmit="event.preventDefault(); delaySubmit();">
+                <legend>Entre em contato por e-mail</legend>
+                <input class="entry" type="text" name="name" id="name" placeholder="Seu nome" autocomplete="off" required>
+                <input class="entry" type="email" name="email" id="email" placeholder="Seu e-mail" autocomplete="off" required>
+                <textarea class="entry" name= "message" id="message" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                <input class="btn-message" onclick="verificatabela()" type="submit" value="Enviar">
+                <input type="hidden" name="accessKey" value="f11d98e8-b779-40e2-bcb6-0957b587ba86">
+
+            </form>
+        </section>
+    </main>
+    <div id="up-box">
+        <button id="up-button">
+            <img src="assets/img/Up-arrow.svg" alt="Voltar ao topo"></i>
+        </button>
+        <label id="up-text" class="archivo" for="up-button">Voltar ao topo</label>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/main.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</body>
+</html>
